@@ -4,3 +4,12 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+```
+
+**O más simple — en Render directamente:**
+
+1. Ve a tu servicio en Render
+2. **Settings** → **Start Command**
+3. Cambia a:
+```
+uvicorn main:app --host 0.0.0.0 --port $PORT
