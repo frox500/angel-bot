@@ -52,12 +52,6 @@ async def webhook(request: Request):
 @app.get("/")
 def health():
     return {"status": "Frox Alerts Bot running 🟢"}
-```
 
----
 
-**Archivo 2: `requirements.txt`**
-```
-fastapi
-uvicorn
-requests
+
